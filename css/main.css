@@ -1,0 +1,625 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+}
+
+.header-container-logo {
+    height: 80px;
+    padding-left: 3px; 
+    padding-top: 9px; 
+}
+
+.header-container-label {
+    display: flex;
+    list-style: none;
+}
+
+.header-container-icon {
+    padding-left: 70px;
+    padding-top: 25px;
+}
+
+.header-container-search {
+    height: 36px;
+    width: 262px;
+    position: relative;
+    top: 9px;
+    margin-left: 10px;
+    border-radius: 26px;
+    border-color: #000;
+    outline: none;
+}
+
+.header-container-icon-search {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-left: 45px;
+    position: relative;
+    top: 35px;
+}
+
+
+.header-container-navbar {
+    display: flex;
+    list-style: none;
+    padding-left: 510px;
+    padding-top: 25px;
+}
+
+.header-container-navbar-item {
+    padding-left: 40px;
+}
+
+.header-container-navbar-item-notification, .header-container-navbar-item-help {
+    font-size: 20px;
+}
+
+.header-container-navbar-item-signup, .header-container-navbar-item-signin {
+    font-size: 20px;
+}
+
+.header-container-navbar-item-signup::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    background-color: #fb9086;
+    top: 50px;
+    right: 215px;
+}
+
+.header-container-navbar-item-signin {
+    cursor: pointer;
+}
+
+.header-container-navbar-item-signup {
+    cursor: pointer;
+}
+
+
+#register-modal {
+    display: none;
+}
+
+@keyframes indan {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    animation: indan linear 0.1s;    
+}
+
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.modal__body {       
+    background-color: #fff;
+    margin: auto;
+    width: 590px;
+    height: 433px;  
+    z-index: 1; 
+    border-radius: 5px;
+}
+
+.auth-form__container {   
+    padding: 0 32px;     
+}
+
+.auth-form__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-form__header-creat {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.auth-form__header-login {
+    font-size: 1.6rem;
+    color: #000;
+    padding-top: 20px;
+}
+
+.auth-form__form-group-input {
+    width: 100%;
+    height: 40px;
+    margin-top: 22px;
+    padding-left: 12px;
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+    outline: none;
+}
+
+.auth-form__form-group-input:focus {
+    border-color: #888;
+}
+
+.auth-form__add{
+    margin-top: 30px;
+    padding: 0 12px;
+}
+
+.auth-form__add-link {
+    text-decoration: none;
+    color: #f7442e;
+}
+
+.auth-form__push {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-form__push-button {
+    min-width: 142px;   
+    height: 36px;
+    background-color: #fff;
+    border: none;
+}
+
+.auth-form__push-button-color {
+    background-color:#24d5d8;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 19px;
+}
+
+
+.auth-form_forget {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.auth-form_forgotton {
+    text-decoration: none;
+    color: #1877f2;
+}
+
+.auth-form_creat-account {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.created-account {
+    cursor: pointer;
+}
+
+.seperate {
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #dadde1;
+    margin-top: 10px;
+}
+.created-account {
+    padding: 12px 12px;
+    color: #fff;
+    font-size: 17px;
+    background-color: #24D5D8;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* dky */
+#register-model {
+    display: none;
+}
+
+
+@keyframes inden {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    animation: inden linear 0.1s;    
+}
+
+.model__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.model__body {       
+    background-color: #fff;
+    margin: auto;
+    width: 590px;
+    height: 470px;  
+    z-index: 1; 
+    border-radius: 5px;
+}
+
+.auth-formed__container {   
+    padding: 0 32px;     
+}
+
+.auth-formed__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-formed__header-creat {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.auth-formed__header-login {
+    font-size: 1.6rem;
+    color: #000;
+    padding-top: 20px;
+}
+
+.auth-formed__form-group-input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding-left: 12px;
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+    outline: none;
+}
+
+.auth-form__formed-group-input:focus {
+    border-color: #888;
+}
+
+.auth-formed__add{
+    margin-top: 30px;
+    padding: 0 12px;
+}
+
+.auth-formed__add-link {
+    text-decoration: none;
+    color: #f7442e;
+}
+
+.auth-formed__push {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-formed__push-button {
+    min-width: 142px;   
+    height: 36px;
+    background-color: #fff;
+    border: none;
+}
+
+.auth-formed__push-button-color {
+    background-color:#24d5d8;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+.form-message {
+    font-size: 15px;
+    line-height: 1.2rem;
+    padding: 4px 0 0;
+    color: red;
+}
+
+/* menu */
+.container {
+    background-color: #f5f5f5;
+    display: flex;
+}
+
+.category {
+    background-color: rgb(34, 49, 67);
+    border-radius: 2px;
+    position: relative;
+    height: 100%;
+    width: 250px;
+}
+
+.category-heading {
+    font-size: 1.7rem;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 0;  
+    color: #fff;    
+    margin-left: 40px;                            /* vi mac dinh the h3 co padding 4px*/
+}
+
+.category-list {
+    padding-left: 0;    /* the ul mac dinh cua no la padding left = 40*/
+    list-style: none;
+    padding: 0 0 8px 0;
+}
+
+.category-list-item-link {
+    position: relative;      /* them ba thuoc tinh dong dau de hover vao no doi mau va di chuyen8*/
+    right: 0;                /* mac dinh no bang 0*/
+    transition: right linear 0.1s;    /* di sang ben phai, di chuyen đều, trong 0,1 giay*/
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 10px 51px;
+    display: block;     /* de display block no ms an cai padding tren duoi 4px kia*/
+    margin-left: 9px;
+}
+
+.category-list-item-link:hover {
+    right: -4px;
+    color: #EE4D2D;
+
+}
+
+.category-list-item-active {
+    display: none;
+}
+
+.category-button-language {
+    background-color: #24D5D8;
+    border-radius: 6px;
+}
+
+.category-list-item-active-language {
+    color: #fff;
+}
+
+.category-heading-icon {
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    margin-left: 8px;
+    color: #fff;
+}
+
+.language-icon {
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    margin-left: 8px;
+}
+
+.diary-icon {
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    margin-left: 12px;
+}
+
+.money-icon {
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    color: #fff;
+    margin-left: 12px;
+}
+
+.language-icon {
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    margin-left: 12px;
+}
+
+.diary-icon {
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    margin-left: 12px;
+}
+
+.wallet-icon {
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    margin-left: 12px;
+}
+
+.connect-icon {
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    margin-left: 12px;
+}
+
+.setting-icon {
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    margin-left: 12px;
+}
+
+.introduce-icon {
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 36px;
+    margin-left: 12px;
+}
+
+
+/* chuyen doi don vi tien te */
+#converter {
+    width: 400px;
+    height: 300px;
+    margin-top: 98px;
+    margin-left: 335px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#change-money {
+    font-size: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 43px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.change-money-input {
+    margin-top: 25px;
+    margin-left: 154px;
+}
+
+#button-convert {
+    background-color: #24D5D8;
+    color: white;
+    padding: 17px 26px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 65px;
+}
+
+#result {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+/* thu chi hang ngay */
+#expenseForm {
+    width: 400px;
+    margin-top: 34px;
+    margin-left: 200px;
+    background-color: #fff;
+    padding: 40px 121px;
+    display: none;
+}
+
+#pay-money, #des, #day-spend-money {
+    font-size: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+#save-money {
+    background-color: #24D5D8;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#expenseList {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+
+
+/* nhat ky thu chi */
+#expense-form {
+    max-width: 400px;
+    margin-top: 104px;
+    margin-left: 368px;
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#add-expense {
+    background-color: #24D5D8;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#expense-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
